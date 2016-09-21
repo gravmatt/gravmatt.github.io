@@ -1,0 +1,535 @@
+/*
+********************************************************************************************
+                                    gravmatt-style
+********************************************************************************************
+*/
+@import url(http://fonts.googleapis.com/css?family=Muli|Amatic+SC:400,700);
+html,
+body {
+  height: 100%;
+  font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Amatic SC';
+  color: #fff;
+}
+#wrapper {
+  min-height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+.my-fade {
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+.my-fade.in {
+  opacity: 1;
+}
+#content {
+  overflow: hidden;
+  padding-bottom: 120px;
+}
+/* must be same height as the footer */
+#footer {
+  position: relative;
+  margin-top: -120px;
+  /* negative value of footer height */
+  height: 120px;
+  clear: both;
+  background: #22282f;
+}
+::-moz-selection {
+  background: rgba(130, 112, 188, 0.7);
+}
+::selection {
+  background: rgba(130, 112, 188, 0.7);
+}
+::-moz-selection {
+  background: rgba(130, 112, 188, 0.7);
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+.rotating {
+  animation: rotating 2s linear infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+.blink {
+  animation: blink 1.7s step-start 0s infinite;
+  animation-timing-function: ease;
+  -webkit-animation: blink 1.7s step-start 0s infinite;
+  -webkit-animation-timing-function: ease;
+}
+#content-title {
+  color: #ddd;
+  margin-top: 30px;
+}
+.btn-link {
+  color: #e2e2e2 !important;
+}
+.btn-link:hover,
+.btn-link:focus {
+  color: #c4b7b7 !important;
+}
+.btn-link.disabled {
+  color: #f57777 !important;
+}
+.width-animation {
+  transition: width 0.5s;
+  -webkit-animation: width 0.5s;
+  -moz-animation: width 0.5s;
+  -ms-animation: width 0.5s;
+  -o-animation: width 0.5s;
+  transition: margin 0.5s;
+  -webkit-animation: margin 0.5s;
+  -moz-animation: margin 0.5s;
+  -ms-animation: margin 0.5s;
+  -o-animation: margin 0.5s;
+}
+.no-link,
+.no-link:hover,
+.-no-link:focus {
+  text-decoration: none;
+  color: #222;
+}
+#header {
+  background-image: url(../media/workspace1s.jpg);
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 640px;
+  font-family: "Amatic SC";
+  position: relative;
+}
+@media (min-width: 768px) {
+  #header {
+    height: 750px;
+  }
+}
+#header .header-title {
+  text-align: center;
+  font-size: 40px;
+  background: #fff;
+  width: 420px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  #header .header-title {
+    width: 100%;
+  }
+}
+#header .snapcode {
+  padding-top: 70px;
+  padding-right: 25px;
+  text-align: right;
+}
+#header .snapcode img {
+  height: 180px;
+}
+@media (max-width: 768px) {
+  #header .snapcode {
+    text-align: center;
+    position: relative;
+    top: -50px;
+    padding-top: 0px;
+    padding-right: 0px;
+  }
+  #header .snapcode img {
+    height: 140px;
+  }
+}
+.navbar-default {
+  background: rgba(34, 40, 47, 0.9);
+  font-family: "Amatic SC";
+}
+#navbar {
+  transition: 500ms ease;
+  -webkit-transition: 500ms ease;
+  -moz-transition: 500ms ease;
+  -ms-transition: 500ms ease;
+  -o-transition: 500ms ease;
+  margin-top: 60px;
+  border-bottom: 0;
+}
+@media (min-width: 768px) {
+  #navbar {
+    background: transparent;
+  }
+}
+@media (max-width: 768px) {
+  #navbar {
+    margin-top: 0;
+  }
+  #navbar .navbar-brand {
+    font-size: 30px !important;
+  }
+}
+#navbar .navbar-brand {
+  font-size: 80px;
+  font-family: 'Amatic SC';
+  font-weight: 700;
+  color: #fff;
+  transition: 300ms ease;
+  -webkit-transition: 300ms ease;
+  -moz-transition: 300ms ease;
+  -ms-transition: 300ms ease;
+  -o-transition: 300ms ease;
+}
+#navbar li {
+  font-size: 25px;
+}
+#navbar li a {
+  color: #fff;
+}
+#navbar li a:hover {
+  color: #7e92a8;
+}
+@media (max-width: 992px) {
+  #navbar li {
+    font-size: 18px;
+  }
+}
+#navbar li.active a {
+  background: transparent !important;
+  color: #7e92a8;
+  font-size: 1.4em;
+  transition: 200ms ease;
+  -webkit-transition: 200ms ease;
+  -moz-transition: 200ms ease;
+  -ms-transition: 200ms ease;
+  -o-transition: 200ms ease;
+}
+.navbar-move-top {
+  margin-top: 0 !important;
+  background: rgba(34, 40, 47, 0.9) !important;
+  min-height: 50px;
+}
+.navbar-move-top .navbar-brand {
+  font-size: 30px !important;
+}
+.navbar-move-top #social {
+  visibility: visible;
+}
+#social {
+  padding-top: 14px;
+  display: inline-block;
+}
+#social a {
+  text-decoration: none !important;
+  font-size: 13px;
+  padding-right: 20px;
+}
+@media (min-width: 768px) {
+  #social {
+    visibility: hidden;
+  }
+}
+#social2 {
+  padding-top: 30px;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  transition: 300ms ease;
+  -webkit-transition: 300ms ease;
+  -moz-transition: 300ms ease;
+  -ms-transition: 300ms ease;
+  -o-transition: 300ms ease;
+}
+#social2 a {
+  text-decoration: none !important;
+  font-size: 18px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+@media (max-width: 768px) {
+  #social2 {
+    visibility: hidden;
+  }
+}
+.twitter-link,
+.github-link,
+.instagram-link,
+.website-link {
+  color: #fff;
+  font-size: 2em !important;
+  text-decoration: none !important;
+}
+.website-link {
+  font-size: 2.4em !important;
+}
+.twitter-link:hover,
+.twitter-link:focus {
+  color: #55acee;
+}
+.github-link:hover,
+.github-link:focus {
+  color: #000;
+}
+.instagram-link:hover,
+.instagram-link:focus {
+  color: #858bbc;
+}
+.website-link:hover,
+.website-link:focus {
+  color: #000;
+}
+.next-arrow {
+  text-align: center;
+  bottom: 0px;
+  position: absolute;
+  width: 80px;
+  left: 50%;
+  margin-left: -40px;
+}
+.next-arrow span {
+  font-size: 70px;
+  color: #fff;
+}
+.next-arrow:hover span {
+  color: #d6d2d8 !important;
+}
+h1 {
+  color: #fff;
+  padding-bottom: 30px;
+  font-family: 'Amatic SC';
+  font-size: 60px;
+}
+#projects {
+  background-color: #283038;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  color: #fff;
+}
+#projects .project {
+  padding: 15px 0;
+  text-align: center;
+}
+#projects .project .title {
+  font-size: 2.2em;
+  margin-bottom: 5px;
+}
+#projects .project .sub-title {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  padding: 0 40px;
+}
+#projects .project .links {
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+#projects .project .description {
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+}
+#projects .project .description pre {
+  margin: 6px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#projects .project .panel {
+  color: #000;
+}
+#projects .project .panel select {
+  display: inline-block;
+  width: 30%;
+}
+#projects .project .panel select:nth-child(2) {
+  width: 60%;
+}
+#projects .project .github {
+  padding-top: 30px;
+  letter-spacing: 5px;
+}
+#blog {
+  background-color: #22282f;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  color: #fff;
+}
+#blog .container {
+  max-width: 500px;
+}
+#blog h1 {
+  padding-bottom: 0px;
+}
+#blog .tumblr-logo {
+  position: relative;
+}
+#blog .avatar {
+  margin: 0 auto;
+  border-radius: 6px;
+  background-image: url('https://api.tumblr.com/v2/blog/gravmatt.tumblr.com/avatar/128');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+#blog a {
+  text-decoration: none;
+}
+#blog #blog-description {
+  padding-top: 20px;
+  color: #fff;
+  max-width: 300px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  padding-bottom: 17px;
+}
+#blog #blog-entries {
+  margin: 0 auto;
+  padding-top: 6px;
+  max-width: 470px;
+}
+#blog #blog-entries hr {
+  max-width: 110px;
+}
+#blog #blog-entries .blog-entry {
+  padding: 10px 20px;
+}
+#blog #blog-entries .blog-entry:active,
+#blog #blog-entries .blog-entry:hover {
+  background-color: #fff;
+  border-radius: 6px;
+  background-color: #1c2026;
+}
+#blog #blog-entries .title {
+  font-size: 1.4em;
+  color: #fff;
+}
+#blog #blog-entries .tags {
+  color: #747576;
+  font-size: .9em;
+}
+#feed {
+  background: #283038;
+  padding-top: 60px;
+  color: #fff;
+}
+#feed .instgram-logo {
+  text-align: center;
+}
+#feed .instgram-logo img {
+  width: 280px;
+}
+#feed .profile {
+  max-width: 450px;
+  margin: 0 auto;
+  position: relative;
+  left: 50px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+#feed .profile .picture {
+  height: 100px;
+  width: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100%;
+  background-size: 100%;
+  display: inline-block;
+}
+#feed .profile .info {
+  position: relative;
+  top: -30px;
+  padding-left: 40px;
+  display: inline-block;
+  max-width: 340px;
+}
+@media (max-width: 768px) {
+  #feed .profile {
+    text-align: center;
+    left: 0px;
+  }
+  #feed .profile .info {
+    top: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 0px;
+  }
+}
+#feed .instagram-media .media {
+  margin-top: 0px;
+  border: 1px solid #283038;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.1s ease-in-out;
+  position: relative;
+}
+#feed .instagram-media .media:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+  /* initial ratio of 1:1*/
+}
+#feed .instagram-media .media:hover {
+  background-size: 102%;
+}
+#me {
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 90px;
+  background-color: #22282f;
+  font-size: 18px;
+}
+#me .bigger {
+  font-size: 1.2em;
+}
+#me h2 {
+  font-size: 40px;
+}
+#me .my-photo {
+  margin: 0 auto;
+  border-radius: 2px;
+  height: 200px;
+  width: 200px;
+  background-image: url(../media/me.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#me .bio {
+  text-align: justify;
+}
+#me .timeline {
+  text-align: center;
+}
+#me .timeline span {
+  font-size: 1.2em;
+}
+#me .timeline .small {
+  font-size: .7em;
+}
+#me .bio,
+#me .timeline {
+  letter-spacing: 2px;
+}

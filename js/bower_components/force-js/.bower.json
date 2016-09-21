@@ -1,0 +1,39 @@
+{
+  "name": "force-js",
+  "homepage": "https://github.com/gravmatt/force-js",
+  "authors": [
+    "René Tanczos (@gravmatt)"
+  ],
+  "description": "The easy way to scroll and animate your page",
+  "main": "src/force.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "animation",
+    "force",
+    "amd",
+    "export",
+    "jquery",
+    "move"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "0.1.1",
+  "_release": "0.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.1",
+    "commit": "24bf4a830765ce3428e6da9a35f5d6352dfb4167"
+  },
+  "_source": "https://github.com/gravmatt/force-js.git",
+  "_target": "^0.1.1",
+  "_originalSource": "force-js",
+  "_direct": true
+}
