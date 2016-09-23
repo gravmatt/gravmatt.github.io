@@ -200,7 +200,7 @@
     });
 
     function getInstagramProfile(username, callback) {
-        $.getJSON('http://insta.gravmatt.com/profile/' + username + '?callback=?', callback);
+        $.getJSON('http://instagram.iive.io/profile/' + username + '?callback=?', callback);
     }
 
     getInstagramProfile('gravmatt', function(data) {
