@@ -200,7 +200,7 @@
     });
 
     function getInstagramProfile(username, callback) {
-        $.getJSON('https://instagram.iive.io/profile/' + username + '?callback=?', callback);
+        $.getJSON('https://instagram.iive.io/profile/' + username, callback);
     }
 
     getInstagramProfile('gravmatt', function(data) {
@@ -211,27 +211,4 @@
         var html = template(data);
         $('#feed .instagram-media').html(html);
     });
-
-    var insta_username = document.querySelector('#insta-profile-username');
-    var insta_search = document.querySelector('#insta-profile-search');
-    var insta_result = document.querySelector('#insta-profile-result');
-
-    function getInstaProfileResult() {
-        var username = insta_username.value;
-        getInstagramProfile(username, function(data) {
-            var str = JSON.stringify(data, null, 4);
-            insta_result.innerText = str;
-            insta_result.parentNode.classList.remove('hidden');
-        });
-    }
-
-    insta_search.addEventListener('click', function(e) {
-        getInstaProfileResult();
-    });
-
-    insta_username.addEventListener('keypress', function(e) {
-        if(e.which == 13)
-            getInstaProfileResult();
-    });
-
 })(window, document);
