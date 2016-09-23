@@ -355,6 +355,15 @@ h1 {
   padding-left: 15px;
   padding-right: 15px;
 }
+#projects .project .description h1,
+#projects .project .description h2,
+#projects .project .description h3,
+#projects .project .description h4,
+#projects .project .description h5 {
+  font-family: 'Muli';
+  line-height: 1.4em;
+  padding-top: 50px;
+}
 #projects .project .panel {
   color: #000;
 }
