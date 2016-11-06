@@ -211,4 +211,12 @@
         var html = template(data);
         $('#feed .instagram-media').html(html);
     });
+
+    window.more = function(btn, project) {
+        btn.classList.toggle('btn-xs');
+        if(btn.innerText === 'Read More') ga('send', 'event', 'projects', 'clickMore', project);
+        // ga('send', 'event', [eventCategory], [eventAction], [eventLabel], [eventValue], [fieldsObject]);
+        btn.innerText = btn.innerText === 'Less' ? 'Read More' : 'Less';
+        document.querySelector('.project .' + project).classList.toggle('details')
+    }
 })(window, document);

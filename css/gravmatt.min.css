@@ -345,6 +345,13 @@ h1 {
   text-decoration: none;
   margin-bottom: 20px;
 }
+#projects .project .more {
+  padding-bottom: 10px;
+}
+#projects .project .details {
+  height: 0px;
+  overflow: hidden;
+}
 #projects .project .description {
   text-align: left;
   max-width: 500px;

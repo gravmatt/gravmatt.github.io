@@ -134,8 +134,12 @@
                             <span class="genericon genericon-github github-link"></span>
                         </a>
                     </div>
-                    <div class="description">
-                        Install through pip.
+                    <div class="more">
+                        <button class="btn btn-default" onclick="more(this, 'py-term')">Read More</button>
+                    </div>
+                    <div class="details py-term">
+                        <div class="description">
+                            Install through pip.
 <pre>
 <code>pip install py-term</code>
 </pre>
@@ -151,12 +155,13 @@ python setup.py install</code>
 
 term.writeLine('Hello, Python!', term.green)</code>
 </pre>
-                        For more, see the <a href="https://github.com/gravmatt/py-term#py-term" target="_blank" rel="noopener noreferrer">README</a>
-                    </div>
-                    <div class="github">
-                        <a class="github-button" href="https://github.com/gravmatt/py-term" data-icon="octicon-star" data-style="mega" data-count-href="/gravmatt/py-term/stargazers" data-count-api="/repos/gravmatt/py-term#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star gravmatt/py-term on GitHub">Star</a>
-                        <a class="github-button" href="https://github.com/gravmatt/py-term/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/gravmatt/py-term/network" data-count-api="/repos/gravmatt/py-term#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork gravmatt/py-term on GitHub">Fork</a>
-                        <a class="github-button" href="https://github.com/gravmatt/py-term/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download gravmatt/py-term on GitHub">Download</a>
+                            For more, see the <a href="https://github.com/gravmatt/py-term#py-term" target="_blank" rel="noopener noreferrer">README</a>
+                        </div>
+                        <div class="github">
+                            <a class="github-button" href="https://github.com/gravmatt/py-term" data-icon="octicon-star" data-style="mega" data-count-href="/gravmatt/py-term/stargazers" data-count-api="/repos/gravmatt/py-term#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star gravmatt/py-term on GitHub">Star</a>
+                            <a class="github-button" href="https://github.com/gravmatt/py-term/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/gravmatt/py-term/network" data-count-api="/repos/gravmatt/py-term#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork gravmatt/py-term on GitHub">Fork</a>
+                            <a class="github-button" href="https://github.com/gravmatt/py-term/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download gravmatt/py-term on GitHub">Download</a>
+                        </div>
                     </div>
                     <div id="force-js"></div>
                 </div>
@@ -176,9 +181,13 @@ term.writeLine('Hello, Python!', term.green)</code>
                             <span class="genericon genericon-website website-link"></span>
                         </a>
                     </div>
-                    <div class="description">
-                        <p>
-                            Get it on Bower.
+                    <div class="more">
+                        <button class="btn btn-default" onclick="more(this, 'force-js')">Read More</button>
+                    </div>
+                    <div class="details force-js">
+                        <div class="description">
+                            <p>
+                                Get it on Bower.
 <pre>
 <code>bower install force-js</code>
 </pre>
@@ -188,70 +197,71 @@ term.writeLine('Hello, Python!', term.green)</code>
 <pre>
 <code>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/force-js/0.1.1/force.min.js"&gt;&lt;/script&gt;</code>
 </pre>
-                        </p>
-                        <p>
-                            Get it from source.
+                            </p>
+                            <p>
+                                Get it from source.
 <pre>
 <code>git clone https://github.com/gravmatt/force-js.git</code>
 </pre>
-                        </p>
-                        <br>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">Demo</div>
-                            <div class="panel-body">
-                                <p>
-                                    Changes this values and click the naviation elements in the top right corner of this page to see the jump function of force.js in action.
-                                </p>
-                                <select class="form-control" onchange="forcejsDemo.easing(this)">
-                                    <option selected="true" value="swing">swing</option>
-                                    <option value="easeInQuad">easeInQuad</option>
-                                    <option value="easeOutQuad">easeOutQuad</option>
-                                    <option value="easeInOutQuad">easeInOutQuad</option>
-                                    <option value="easeInCubic">easeInCubic</option>
-                                    <option value="easeOutCubic">easeOutCubic</option>
-                                    <option value="easeInOutCubic">easeInOutCubic</option>
-                                    <option value="easeInQuart">easeInQuart</option>
-                                    <option value="easeOutQuart">easeOutQuart</option>
-                                    <option value="easeInOutQuart">easeInOutQuart</option>
-                                    <option value="easeInQuint">easeInQuint</option>
-                                    <option value="easeOutQuint">easeOutQuint</option>
-                                    <option value="easeInOutQuint">easeInOutQuint</option>
-                                    <option value="easeInSine">easeInSine</option>
-                                    <option value="easeOutSine">easeOutSine</option>
-                                    <option value="easeInOutSine">easeInOutSine</option>
-                                    <option value="easeInExpo">easeInExpo</option>
-                                    <option value="easeOutExpo">easeOutExpo</option>
-                                    <option value="easeInOutExpo">easeInOutExpo</option>
-                                    <option value="easeInCirc">easeInCirc</option>
-                                    <option value="easeOutCirc">easeOutCirc</option>
-                                    <option value="easeInOutCirc">easeInOutCirc</option>
-                                    <option value="easeInElastic">easeInElastic</option>
-                                    <option value="easeOutElastic">easeOutElastic</option>
-                                    <option value="easeInOutElastic">easeInOutElastic</option>
-                                    <option value="easeInBack">easeInBack</option>
-                                    <option value="easeOutBack">easeOutBack</option>
-                                    <option value="easeInOutBack">easeInOutBack</option>
-                                    <option value="easeInBounce">easeInBounce</option>
-                                    <option value="easeOutBounce">easeOutBounce</option>
-                                    <option value="easeInOutBounce">easeInOutBounce</option>
-                                </select>
-                                <select class="form-control" onchange="forcejsDemo.duration(this)">
-                                    <option value="500">500</option>
-                                    <option selected="true" value="1000">1000</option>
-                                    <option value="2000">2000</option>
-                                    <option value="3000">3000</option>
-                                </select>
+                            </p>
+                            <br>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Demo</div>
+                                <div class="panel-body">
+                                    <p>
+                                        Changes this values and click the naviation elements in the top right corner of this page to see the jump function of force.js in action.
+                                    </p>
+                                    <select class="form-control" onchange="forcejsDemo.easing(this)">
+                                        <option selected="true" value="swing">swing</option>
+                                        <option value="easeInQuad">easeInQuad</option>
+                                        <option value="easeOutQuad">easeOutQuad</option>
+                                        <option value="easeInOutQuad">easeInOutQuad</option>
+                                        <option value="easeInCubic">easeInCubic</option>
+                                        <option value="easeOutCubic">easeOutCubic</option>
+                                        <option value="easeInOutCubic">easeInOutCubic</option>
+                                        <option value="easeInQuart">easeInQuart</option>
+                                        <option value="easeOutQuart">easeOutQuart</option>
+                                        <option value="easeInOutQuart">easeInOutQuart</option>
+                                        <option value="easeInQuint">easeInQuint</option>
+                                        <option value="easeOutQuint">easeOutQuint</option>
+                                        <option value="easeInOutQuint">easeInOutQuint</option>
+                                        <option value="easeInSine">easeInSine</option>
+                                        <option value="easeOutSine">easeOutSine</option>
+                                        <option value="easeInOutSine">easeInOutSine</option>
+                                        <option value="easeInExpo">easeInExpo</option>
+                                        <option value="easeOutExpo">easeOutExpo</option>
+                                        <option value="easeInOutExpo">easeInOutExpo</option>
+                                        <option value="easeInCirc">easeInCirc</option>
+                                        <option value="easeOutCirc">easeOutCirc</option>
+                                        <option value="easeInOutCirc">easeInOutCirc</option>
+                                        <option value="easeInElastic">easeInElastic</option>
+                                        <option value="easeOutElastic">easeOutElastic</option>
+                                        <option value="easeInOutElastic">easeInOutElastic</option>
+                                        <option value="easeInBack">easeInBack</option>
+                                        <option value="easeOutBack">easeOutBack</option>
+                                        <option value="easeInOutBack">easeInOutBack</option>
+                                        <option value="easeInBounce">easeInBounce</option>
+                                        <option value="easeOutBounce">easeOutBounce</option>
+                                        <option value="easeInOutBounce">easeInOutBounce</option>
+                                    </select>
+                                    <select class="form-control" onchange="forcejsDemo.duration(this)">
+                                        <option value="500">500</option>
+                                        <option selected="true" value="1000">1000</option>
+                                        <option value="2000">2000</option>
+                                        <option value="3000">3000</option>
+                                    </select>
+                                </div>
                             </div>
+                            <p>
+                                This demo is just a sneak peek of the jump function in force.js.<br>
+                                If you want to see more, go to the <a href="https://force-js.com" target="_blank" rel="noopener noreferrer">project page</a>.
+                            </p>
                         </div>
-                        <p>
-                            This demo is just a sneak peek of the jump function in force.js.<br>
-                            If you want to see more, go to the <a href="https://force-js.com" target="_blank" rel="noopener noreferrer">project page</a>.
-                        </p>
-                    </div>
-                    <div class="github">
-                        <a class="github-button" href="https://github.com/gravmatt/force-js" data-icon="octicon-star" data-style="mega" data-count-href="/gravmatt/force-js/stargazers" data-count-api="/repos/gravmatt/force-js#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star gravmatt/force-js on GitHub">Star</a>
-                        <a class="github-button" href="https://github.com/gravmatt/py-t/force-js" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/gravmatt/force-js/network" data-count-api="/repos/gravmatt/force-js#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork gravmatt/force-js on GitHub">Fork</a>
-                        <a class="github-button" href="https://github.com/gravmatt/force-js/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download gravmatt/force-js on GitHub">Download</a>
+                        <div class="github">
+                            <a class="github-button" href="https://github.com/gravmatt/force-js" data-icon="octicon-star" data-style="mega" data-count-href="/gravmatt/force-js/stargazers" data-count-api="/repos/gravmatt/force-js#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star gravmatt/force-js on GitHub">Star</a>
+                            <a class="github-button" href="https://github.com/gravmatt/py-t/force-js" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/gravmatt/force-js/network" data-count-api="/repos/gravmatt/force-js#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork gravmatt/force-js on GitHub">Fork</a>
+                            <a class="github-button" href="https://github.com/gravmatt/force-js/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download gravmatt/force-js on GitHub">Download</a>
+                        </div>
                     </div>
                     <div id="instagram-profile"></div>
                 </div>
@@ -268,25 +278,30 @@ term.writeLine('Hello, Python!', term.green)</code>
                             <span class="genericon genericon-website website-link"></span>
                         </a>
                     </div>
-                    <div class="description">
-                        <p>
-                            At the time, it is possible to get profile information with its last media entries and media by hashtags.
-                        </p>
-                        <p>
-                            To get profile informations.
-                            <pre><code>https://instagram.iive.io/profile/&lt;username&gt;</code></pre>
-                        </p>
-                        <p>
-                            And to get media entries by hashtag.
-                            <pre><code>https://instagram.iive.io/hashtag/&lt;hashtag&gt;</code></pre>
-                            By calling this url you will get the latest entries and top posts associated with this hashtag.
-                        </p>
-                        <p>
-                            To get more informations, visit the <a href="https://iive.io" target="_blank" rel="noopener noreferrer">project page.</a>
-                        </p>
-                        <h4 class="text-center">
-                            This service is free of use <br>❤️ and should help you create beautiful content ❤️
-                        </h4>
+                    <div class="more">
+                        <button class="btn btn-default" onclick="more(this, 'instagram-profile')">Read More</button>
+                    </div>
+                    <div class="details instagram-profile">
+                        <div class="description">
+                            <p>
+                                At the time, it is possible to get profile information with its last media entries and media by hashtags.
+                            </p>
+                            <p>
+                                To get profile informations.
+                                <pre><code>https://instagram.iive.io/profile/&lt;username&gt;</code></pre>
+                            </p>
+                            <p>
+                                And to get media entries by hashtag.
+                                <pre><code>https://instagram.iive.io/hashtag/&lt;hashtag&gt;</code></pre>
+                                By calling this url you will get the latest entries and top posts associated with this hashtag.
+                            </p>
+                            <p>
+                                To get more informations, visit the <a href="https://iive.io" target="_blank" rel="noopener noreferrer">project page.</a>
+                            </p>
+                            <h4 class="text-center">
+                                This service is free of use <br>❤️ and should help you create beautiful content ❤️
+                            </h4>
+                        </div>
                     </div>
                 </div>
 
