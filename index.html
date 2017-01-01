@@ -335,6 +335,9 @@ term.writeLine('Hello, Python!', term.green)</code>
                                 {{#if video-caption}}
                                 [ <i>Video</i> ]
                                 {{/if}}
+                                {{#if photo-caption}}
+                                {{{photo-caption}}}
+                                {{/if}}
                             </div>
                             <div class="tags">
                                 {{#each tags}}
@@ -379,7 +382,7 @@ term.writeLine('Hello, Python!', term.green)</code>
         </div>
         <div id="footer">
             <div style="color:#747576;font-size:20px;padding-top:50px;text-align:center;letter-spacing:3px;font-family:'Amatic SC'">
-                COPYRIGHT &copy; RENE TANCZOS 2016
+                COPYRIGHT &copy; RENE TANCZOS 2017
             </div>
         </div>
         <script>
