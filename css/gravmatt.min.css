@@ -432,6 +432,9 @@ h1 {
 #blog #blog-entries .blog-entry {
   padding: 10px 20px;
 }
+#blog #blog-entries .blog-entry iframe {
+  display: inline !important;
+}
 #blog #blog-entries .blog-entry:active,
 #blog #blog-entries .blog-entry:hover {
   background-color: #fff;
