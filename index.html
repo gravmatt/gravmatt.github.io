@@ -99,21 +99,21 @@
                             <p>
                                 My name is René Tanczos, based in Vienna, Austria. I have a passion about technology, especially coding. You may have seen it written around on this page. I started at school with Visual Basic, C# and the .NET Framework. I was the only student who write apps for windows on a Mac. My first job was as a .NET developer for almost three years. But I always liked art and design. So for me as developer, I wanted to write code for the web. Learning CSS was tough. It is powerful (today even more with animations, transitions and media queries) but sometimes a pain in the ass. Because of all the browser compatibility. Even JavaScript is a bit different to traditional languages, with its async workflow. But now it's one of my favorite languages. Today I try to learn as much as I can. My favorite tool to reach that goal are books. I also build electric circuits and write programmes for microcontrollers. While I'm doing all this things, I try to integrate it seamlessly in our physical world. To create something good, it has to be so simple, that everyone can use it without any explanations.
                             </p>
-
-                            <hr>
+                            <!-- <hr> -->
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-offset-3 col-md-6">
+                            <div class="stackoverflow">
+                                <img src="media/stackoverflow.png" alt="instagram.com/gravmatt"></img>
+                            </div>
                             <div class="timeline">
-                                <p><span>2009 - 2010</span>
-                                    <br>Developer at Hermeskim GmbH</p>
-                                <p><span>2010 - 2012</span>
-                                    <br>Head of Development at KingBill GmbH</p>
-                                <p><span>2012 - 2015</span>
-                                    <br>Freelancer<br><span class="small">(still available for cool projects)</span></p>
-                                <p><span>2015 - ?</span>
-                                    <br>Developer at orat.io</p>
+                                <p>
+                                    <a href="https://stackoverflow.com/story/gravmatt" target="_blank" rel="noopener noreferrer">My Developer Story</a>
+                                </p>
+                                <p>
+                                    <a href="https://stackoverflow.com/cv/gravmatt" target="_blank" rel="noopener noreferrer">My CV</a>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -340,6 +340,10 @@ term.writeLine('Hello, Python!', term.green)</code>
                                 {{/if}}
                                 {{#if regular-title}}
                                 {{{regular-title}}}
+                                {{/if}}
+                                {{#if question}}
+                                {{{question}}}
+                                <div class="tags">{{{answer}}}</div>
                                 {{/if}}
                             </div>
                             <div class="tags">

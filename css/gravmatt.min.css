@@ -539,6 +539,13 @@ h1 {
 #me .bio {
   text-align: justify;
 }
+#me .stackoverflow {
+  text-align: center;
+  padding: 50px 0 10px 0;
+}
+#me .stackoverflow img {
+  width: 230px;
+}
 #me .timeline {
   text-align: center;
 }
